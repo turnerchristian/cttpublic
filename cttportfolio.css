@@ -53,19 +53,46 @@ header{
 	height:auto;
 }
 .aboutmetext{
-	
+	padding-right:15%;
 }
 .aboutmesub{
 	background-color:#70db70;
 }
 /*======================================== PORTFOLIO SECTION ========================================*/
 		
-.portfolio{
+.topportfolio{
 	background-color:#0040ff;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.mainportfolio{
+	background-color:#1a75ff;
+	display:flex;
+	flex-wrap:wrap;
+	width:100%;
+}
+.mainportfolio > *{
+	display:block;
+	width:50%;
+	height:50%;
+	
 }
 .subportfolio{
 	background-color:#00bfff;
+	display:flex;
+	justify-content:space-between;
 }
+.subportfolio > div{
+	width:33%;
+	height:33%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.subportfolio > div > img{
+	width:100%;
+	height:100%;
 /*======================================== FOOTER/CONTACT SECTION ========================================*/
 footer{
 	background-color:#ffff66;
