@@ -4,3 +4,26 @@
 html{
 	font-size:62.5%;
 }
+
+nav{
+	background-color:#ff00ff;
+}
+header{
+	background-color:#808080;
+}
+.aboutmediv{
+	background-color:#1f7a1f;
+}
+.morepersonalinfo{
+	background-color:#70db70;
+}
+		
+.portfolio{
+	background-color:#0040ff;
+}
+.subportfolio{
+	background-color:#00bfff;
+}
+footer{
+	background-color:#ffff66;
+}
