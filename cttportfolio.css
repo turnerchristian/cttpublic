@@ -4,19 +4,61 @@
 html{
 	font-size:62.5%;
 }
-
+body{
+	margin:0;
+}
+/*======================================== NAV SECTION ========================================*/
 nav{
 	background-color:#ff00ff;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	position:sticky;
+	top:0;
+	width:100vw;
+	height:50px;
 }
+/*======================================== HEADER SECTION ========================================*/
 header{
 	background-color:#808080;
+	width:100vw;
+	height:calc(100vh - 50px);
+	display:flex;
+	align-items:center;
+	justify-content:center;
 }
+/*======================================== ABOUT ME SECTION ========================================*/
 .aboutmediv{
 	background-color:#1f7a1f;
+	padding:25px 100px;
 }
-.morepersonalinfo{
+.aboutmemain{
+	display:flex;
+	flex-direction:column;
+}
+.aboutmemainchild{
+	background-color:#33cc33;
+	display:flex;
+}
+.aboutmeimg{
+	width:25%;
+	display:flex;
+	justify-content:center;
+}
+
+.aboutmeimg>img{ /*634x951 this is teh stock image */
+	max-width:634px;
+	max-height:951px;
+	width:inherit;
+	height:auto;
+}
+.aboutmetext{
+	
+}
+.aboutmesub{
 	background-color:#70db70;
 }
+/*======================================== PORTFOLIO SECTION ========================================*/
 		
 .portfolio{
 	background-color:#0040ff;
@@ -24,6 +66,7 @@ header{
 .subportfolio{
 	background-color:#00bfff;
 }
+/*======================================== FOOTER/CONTACT SECTION ========================================*/
 footer{
 	background-color:#ffff66;
 }
