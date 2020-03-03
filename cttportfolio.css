@@ -23,9 +23,8 @@ nav{
 	width:100vw;
 	height:50px;
 }
-nav > img{
+nav > a > img{
 	height:42px; 
-	width:42px;
 }
 /*======================================== HEADER SECTION ========================================*/
 header{
@@ -81,7 +80,13 @@ header{
 	flex-wrap:wrap;
 	width:100%;
 }
-.mainportfolio > *{
+.mainportfolio > a{
+	width:100%;
+}
+.mainprojectlink{
+	display:flex;
+}
+.mainprojectlink > *{
 	display:block;
 	width:50%;
 	height:50%;
@@ -92,17 +97,24 @@ header{
 	display:flex;
 	justify-content:space-between;
 }
-.subportfolio > div{
+.subportfolio > a{
 	width:33%;
 	height:33%;
+}
+.subprojectlink > *{
+	width:100%;
+	height:100%;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
 }
-.subportfolio > div > img{
-	width:100%;
-	height:100%;
+.mainprojectlink > img{
+	object-fit:cover;
 }
+a.portfoliolinks:hover{
+	border:1px solid black;	
+}
+
 /*======================================== CONTACT SECTION ========================================*/
 .contactme{
 	background-color:red;
@@ -119,3 +131,33 @@ footer{
 	justify-content:space-between;
 	padding:0 30%;
 }
+/*======================================== PROJECT PAGE SECTION ========================================*/
+.projectpageinfo{
+	display:flex;
+	justify-content:space-between;
+	width:1350px;
+	margin:0 auto;
+	height:calc(80vh - 50px);
+}
+.projectpageinfo > *{
+	width:30%;
+}
+.projectpageinfo > img{
+	object-fit:cover;
+}
+.projectpagetext{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.projectpagelinks{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-around;
+}
+.projectpagelinks > a{
+	border:1px solid black;
+	padding:2px;
+}
+
