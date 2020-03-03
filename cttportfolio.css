@@ -42,10 +42,12 @@ header{
 .aboutmemain{
 	display:flex;
 	flex-direction:column;
+	align-items:center;
 }
 .aboutmemainchild{
 	background-color:#33cc33;
 	display:flex;
+	width:100%;
 }
 .aboutmeimg{
 	width:25%;
