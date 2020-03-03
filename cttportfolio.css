@@ -12,9 +12,12 @@ main > div{
 	max-width:1350px;
 	padding:0 1%;
 }
+main{
+	background-color:red;
+}
 /*======================================== NAV SECTION ========================================*/
 nav{
-	background-color:#ff00ff;
+	background-color:#FF6680;
 	display:flex;
 	justify-content:space-around;
 	align-items:center;
@@ -28,12 +31,28 @@ nav > a > img{
 }
 /*======================================== HEADER SECTION ========================================*/
 header{
-	background-color:#808080;
 	width:100vw;
 	height:calc(100vh - 50px);
+	color:white;
+	position:relative;
+	z-index:-1;
+}
+#frontpagevideo{
+	object-fit:cover;
+	width:inherit;
+	max-height:inherit;
+	position:fixed;
+}
+.headertext{
+	position:absolute;
+	top:0;
+	left:0;
+	width:inherit;
+	height:inherit;
 	display:flex;
-	align-items:center;
+	flex-direction:column;
 	justify-content:center;
+	align-items:center;
 }
 /*======================================== ABOUT ME SECTION ========================================*/
 .aboutmediv{
