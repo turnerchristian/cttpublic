@@ -196,51 +196,63 @@ h4, .am_text > h5{
 }
 .portfolio h4{
 	color:rgb(248,248,255);
-}		
-.topportfolio{
+}
+.pf_main{
 	display:flex;
 	flex-direction:column;
-	align-items:center;
 }
-.mainportfolio{
-	background-color:#1a75ff;
-	display:flex;
-	flex-wrap:wrap;
+.project_container{
 	width:100%;
-}
-.mainportfolio > a{
-	width:100%;
-}
-.mainprojectlink{
-	display:flex;
-}
-.mainprojectlink > *{
-	display:block;
-	width:50%;
 	height:50%;
-
-}
-.subportfolio{
-	background-color:#00bfff;
 	display:flex;
 	justify-content:space-between;
 }
-.subportfolio > a{
-	width:33%;
-	height:33%;
+.project2 {
+	align-items:flex-end;
 }
-.subprojectlink > *{
-	width:100%;
+.project_container > * {
 	height:100%;
-	display:flex;
-	flex-direction:column;
-	align-items:center;
 }
-.mainprojectlink > img{
+.project_img{
+	max-height:100%;
+	display:block;
 	object-fit:cover;
 }
-a.portfoliolinks:hover{
-	border:1px solid black;	
+.project_text{
+	text-decoration:none;
+	color:rgb(2,7,9);
+	font-size:2rem;
+	background-color:red;
+	width:70%;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	height:100%;
+}
+.project_text > *{
+	margin:0;
+	padding:0;
+}
+.project_text h5{
+	font-size:4rem;
+	font-weight:600;
+	text-transform:uppercase;
+}
+.project_text p{
+	flex-grow:100;
+}
+.project1 .project_text{
+	margin-left:50px;
+	margin-bottom:50px;
+}
+.project2 .project_text{
+	margin-right:50px;
+}
+.project_links{
+	width:70%;
+	display:flex;
+	justify-content:space-between;
+	margin:0 auto;
 }
 
 /*======================================== CONTACT SECTION ========================================*/
