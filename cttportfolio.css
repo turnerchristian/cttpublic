@@ -3,39 +3,86 @@
 }
 html{
 	font-size:62.5%;
+	font-family:'Montserrat', sans-serif;
+	color:rgba(4,8,9,1);
 }
 body{
 	margin:0;
 }
 main > div{
 	margin:0 auto;
-	max-width:1350px;
-	padding:0 1%;
+	max-width:1300px;
 }
 main{
-	background-color:#040809;
-	box-shadow: 0px -2px 10px rgba(4,8,9, 0.6);
+}
+h4{
+	font-size:6.0rem;
+}
+.am_text,.aboutme img, button, .navlinks a{
+	box-shadow: 0px -2px 5px rgba(2,8,9, 0.6)
+}
+button{
+	color:white;
+	background:none;
+	padding:10px;
+	font-size:2rem;
+	text-transform:uppercase;
+	border:1px solid rgb(248,248,255);
+	font-weight:600;
 }
 /*======================================== NAV SECTION ========================================*/
 nav{
-	background-color:#FF6680;
 	display:flex;
-	justify-content:space-around;
+	padding:0 5%;
+	justify-content:space-between;
 	align-items:center;
-	position:sticky;
+	position:fixed;
 	top:0;
 	width:100vw;
-	height:50px;
 	z-index:1;
+	margin:10px 0;
 }
-nav > a > img{
-	height:42px; 
+nav a, nav label{
+	text-decoration:none;
+	color:rgba(248,248,255, 1);
+	text-transform:uppercase;
+    font-family: Montserrat, sans-serif;
+}
+.navlogo > img{
+	padding-right:15px;
+	height:100%;
+	filter: invert(0.95); 
+	position:relative;
+	bottom:4px;
+}
+
+.navlogo > label{
+	font-size:2.5rem;
+	font-weight:700;
+}
+.navlogo{
+	display:flex;
+	align-items:center;
+	height:80px;
+	
+}
+.navlinks > a{
+	font-size:2rem;
+	margin-left:30px;
+	padding:15px 10px;
+	padding-top:18px;
+	border:1px solid rgba(248,248,255,0);
+	border-radius: 5px;
+	font-weight:600;
+}
+.navlinks a:hover{
+	border:1px solid rgba(248,248,255,1);
+
 }
 /*======================================== HEADER SECTION ========================================*/
 header{
 	width:100vw;
-	height:calc(105vh - 50px);
-	color:white;
+	height:100vh;
 	position:relative;
 	z-index:-1;
 }
@@ -58,65 +105,97 @@ header{
 }
 h1{
 	font-size:2.5rem;
+	color:white;
 }
 h2{
 	font-size:1.8rem;
+	text-transform:uppercase;
+	color: rgb(248,248,255);
 }
 /*======================================== ABOUT ME SECTION ========================================*/
 .aboutme{
-	background-color:#FF6680;
-	height:800px;
+	height:1200px;
+	width:100%;
 	display:flex;
 	flex-direction:column;
-	align-items:center;
+	justify-content:space-between;
 }
-.aboutmemain, .aboutmesub{
-	height:50%;
+.aboutme > * {
+	margin-bottom:50px;
+	border-radius:10px;
+}
+.aboutme > button{
+	margin:0 auto;
+}
+.amcontainer{
+	width:100%;
+	height:500px;
 	display:flex;
-	padding:5% 0;
-
 }
-.aboutmemainimg, .aboutmesubimg{
-	width:35%;
+.am_main > *{
+	padding:50px;
 }
-.aboutmemainimg > img{
-	display: block;
-	max-width:634px;
-	max-height:951px;
-	width:auto;
-	height:100%;
+.am_img{
+	width:30%;
 }
-.aboutmesubimg{
-	background-color:green;
-	max-width:266.6px;
-	max-height:400px;
-}
-}
-.portraitsize {
-	max-width:266.6px;
-	max-height:400px;
-}
-.subimg{
-	height:100%;
+.am_img > img{
 	max-width:100%;
-	object-fit: cover;
+	max-height:100%;
+	border-radius:50%;
 }
-.aboutmetext{
-	width:65%;
+.am_sub{
+	margin-top:50px;
 }
-.aboutmetext > h4, .aboutmetext > h5{
+.am_sub_img{
+	position:relative;
+}
+#am_sub_ar{
+	opacity:0;
+}
+.am_sub_content{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	padding:50px;
+}
+.sub_img{
+	max-width:100%;
+	height:100%;
+	object-fit:cover;
+	border-radius:50%;
+}
+.am_sub .am_text{
+	padding:50px;
+}
+.am_text{
+	background-color:lightpink;
+	width:70%;
+	border-radius:10px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	margin:auto 0;
+	padding-top:40px;
+}
+h4, .am_text > h5{
+	font-weight:700;
 	font-size:6.0rem;
+	text-transform:uppercase;
 }
-.aboutmetext > p{
+.am_text > p{
 	font-size:2.0rem;
 }
-.aboutmetext > *{
+.am_text > *{
 	margin:0;
 }
 
 /*======================================== PORTFOLIO SECTION ========================================*/
 .portfolio{
-	background-color:#0040ff;
+}
+.portfolio h4{
+	color:rgb(248,248,255);
 }		
 .topportfolio{
 	display:flex;
@@ -215,3 +294,9 @@ footer{
 	align-items:center;
 }
 
+/*======================================== MEDIA QUERIES SECTION ========================================*/
+@media only screen and (max-width: 1300px) {
+	.main > div{
+		padding:1%;
+	}
+}
