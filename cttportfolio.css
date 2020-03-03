@@ -63,60 +63,48 @@ h2{
 	font-size:1.8rem;
 }
 /*======================================== ABOUT ME SECTION ========================================*/
-.aboutmediv{
+.aboutme{
 	background-color:#FF6680;
 	height:800px;
-}
-.aboutmemain{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
+}
+.aboutmemain, .aboutmesub{
 	height:50%;
-}
-.aboutmemainchild{
-	background-color:white;
 	display:flex;
-	width:100%;
-	height:100%;
-}
-.aboutmeimgaspect{
-	position:relative;
-	width:40%;
-	height:100%;
-}
-.aboutmeimgdiv{
-	height:0;
-	padding-top:150%;
-	height:inherit;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	margin:0 auto;
-}
+	padding:5% 0;
 
-.aboutmeimgdiv2{ /*634x951 this is teh stock image */
-	position:absolute;
+}
+.aboutmemainimg, .aboutmesubimg{
+	width:35%;
+}
+.aboutmemainimg > img{
+	display: block;
 	max-width:634px;
 	max-height:951px;
-	width:100%;
-	height:inherit;
-	top:0;
-	left:0;
-	padding:25px 0%;
+	width:auto;
+	height:100%;
 }
-.aboutmeimgdiv2 > img{
-	display:block;
-	object-fit:contain;
-	height:inherit;
-	margin:0 auto;
+.aboutmesubimg{
+	background-color:green;
+	max-width:266.6px;
+	max-height:400px;
+}
+}
+.portraitsize {
+	max-width:266.6px;
+	max-height:400px;
+}
+.subimg{
+	height:100%;
+	max-width:100%;
+	object-fit: cover;
 }
 .aboutmetext{
-	max-width:675px;
-	margin-right:auto;
-	padding-top:25px;
-	padding-bottom:25px;
+	width:65%;
 }
-.aboutmetext > h4{
+.aboutmetext > h4, .aboutmetext > h5{
 	font-size:6.0rem;
 }
 .aboutmetext > p{
@@ -125,10 +113,7 @@ h2{
 .aboutmetext > *{
 	margin:0;
 }
-.aboutmesub{
-	background-color:grey;
-	height:50%;
-}
+
 /*======================================== PORTFOLIO SECTION ========================================*/
 .portfolio{
 	background-color:#0040ff;
