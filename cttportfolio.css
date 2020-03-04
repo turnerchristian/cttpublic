@@ -65,7 +65,7 @@ nav{
 }
 nav a, nav p{
 	text-decoration:none;
-	color:rgba(248,248,255, 1);
+	color:rgb(248,248,255);
 	text-transform:uppercase;
 }
 .navlogo > img{
@@ -85,7 +85,6 @@ nav a, nav p{
 	display:flex;
 	align-items:center;
 	height:80px;
-	
 }
 .navlinks > a{
 	font-size:2rem;
@@ -358,7 +357,7 @@ h2{
 	border-radius:10px;
 }
 .contact_input button{
-	box-shadow: 0px -2px 5px rgba(248,248,255, 0.0)
+	box-shadow: none;
 }
 .contact_input button:hover{
 	border:1px solid rgba(248,248,255,0.6);
@@ -479,4 +478,11 @@ footer{
 	.main > div{
 		padding:1%;
 	}
+}
+@media only screen and (max-width: 1300px) {
+	.navlinks + a#homelink{
+		display:none;
+	}
+		
+	
 }
