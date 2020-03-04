@@ -18,8 +18,8 @@ main{
 h4{
 	font-size:6.0rem;
 }
-.am_text,.aboutme img, button, .navlinks a{
-	box-shadow: 0px -2px 5px rgba(2,8,9, 0.6)
+.am_text,.aboutme img, button, .navlinks a, .project_container > *, .pf_sub_links img, .footer_icon_size > a > img{
+	box-shadow: 0px -2px 5px rgba(2,8,9,0.6)
 }
 button{
 	color:white;
@@ -29,6 +29,14 @@ button{
 	text-transform:uppercase;
 	border:1px solid rgb(248,248,255);
 	font-weight:600;
+	border-radius:10px;
+}
+a.icon_hover img, a.pf_sub_links h6{ /*just hover stuff*/
+	border:1px solid rgba(248,248,255,0);	
+}
+a.icon_hover:hover img, a.pf_sub_links:hover h6, button:hover{
+	border:1px solid rgba(248,248,255,1);
+	box-shadow: 0px -2px 5px rgba(248,248,255, 0.6)
 }
 /*======================================== NAV SECTION ========================================*/
 nav{
@@ -183,6 +191,9 @@ h4, .am_text > h5{
 	font-weight:700;
 	font-size:6.0rem;
 	text-transform:uppercase;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+	color: rgb(248,248,255);
 }
 .am_text > p{
 	font-size:2.0rem;
@@ -197,9 +208,15 @@ h4, .am_text > h5{
 .portfolio h4{
 	color:rgb(248,248,255);
 }
+.pf_top{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
 .pf_main{
 	display:flex;
 	flex-direction:column;
+	height:1000px;
 }
 .project_container{
 	width:100%;
@@ -209,41 +226,50 @@ h4, .am_text > h5{
 }
 .project2 {
 	align-items:flex-end;
+	margin-top:50px;
 }
 .project_container > * {
 	height:100%;
 }
 .project_img{
-	max-height:100%;
 	display:block;
+	height:100%;
+	max-width:100%;
+	object-fit:cover;
+	
+}
+.pf_link{
+	width:30%;
 	object-fit:cover;
 }
 .project_text{
 	text-decoration:none;
 	color:rgb(2,7,9);
 	font-size:2rem;
-	background-color:red;
+	background-color:lightpink;
 	width:70%;
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;
-	height:100%;
+	border-radius:10px;
 }
 .project_text > *{
-	margin:0;
-	padding:0;
+	margin:2%;
+	padding-left:2%;
 }
 .project_text h5{
+	color:rgb(248,248,255);
 	font-size:4rem;
 	font-weight:600;
 	text-transform:uppercase;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
 }
 .project_text p{
 	flex-grow:100;
 }
 .project1 .project_text{
 	margin-left:50px;
-	margin-bottom:50px;
 }
 .project2 .project_text{
 	margin-right:50px;
@@ -253,6 +279,45 @@ h4, .am_text > h5{
 	display:flex;
 	justify-content:space-between;
 	margin:0 auto;
+	padding-bottom:2%;
+}
+.pf_top button{
+	margin-top:80px;
+	margin-bottom:80px;
+}
+/*======================================== SUB PORTFOLIO SECTION ========================================*/
+.pf_sub{
+	display:flex;
+	justify-content:space-between;
+	height:500px;
+}
+.pf_sub > a {
+	width:30%;
+	height:100%;
+	text-decoration:none;
+	
+}
+.pf_sub_link_div{
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.pf_sub_link_div > img{
+	object-fit:cover;
+	height:100%;
+	max-width:100%;
+}
+.pf_sub h6{
+	text-decoration:none;
+	font-weight:600;
+	font-size:2.0rem;
+	text-transform:uppercase;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+	color: rgb(248,248,255);
+	padding:5%;
+	
 }
 
 /*======================================== CONTACT SECTION ========================================*/
@@ -266,18 +331,46 @@ h4, .am_text > h5{
 }
 /*======================================== FOOTER SECTION ========================================*/
 footer{
-	background-color:#ffff66;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	padding:0 30%;
+	height:300px;
+}
+.footer_links{
+	max-width:100%;
+	margin:0 auto;
 	display:flex;
 	justify-content:space-between;
-	padding:0 30%;
+	align-items:center;
+	height:30%;
+	width:60%;
 }
+.footer_icon_size{
+	width:33%;
+	height:100%;
+}
+.footer_icon_size > a > img{
+	display:block;
+	max-width:100%;
+	max-height:100%;
+	border-radius:50%;
+}
+
 /*======================================== PROJECT PAGE SECTION ========================================*/
+.main_project{
+	background-color:rgb(2,8,9);
+	z-index:-2;
+	color:rgb(248,248,255);
+}
 .projectpageinfo{
 	display:flex;
 	justify-content:space-between;
 	width:1350px;
 	margin:0 auto;
-	height:calc(80vh - 50px);
+	height:80vh;
+	position:relative;
+	top:80px;
 }
 .projectpageinfo > *{
 	width:30%;
