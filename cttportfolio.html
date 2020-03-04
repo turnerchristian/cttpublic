@@ -11,18 +11,18 @@
 	<nav>
 		<a class="navlogo" href="cttportfolio.html">
 			<img src="placeholderlogo.png" alt="Logo replacement">
-			<label>Placeholder</label>
+			<p>Placeholder</p>
 		</a> 
 		<div class="navlinks">
-			<a href="cttportfolio.html">Home</a>
-			<a href="google.com">About me</a>
-			<a href="google.com">Portolio</a>
-			<a href="google.com">Contact me</a>
+			<a href="#">Home</a>
+			<a href="#aboutme_jump">About me</a>
+			<a href="#portfolio_jump">Portolio</a>
+			<a href="#contactme_jump">Contact me</a>
 		</div>
 	</nav>
-	<header>
-		<video autoplay muted loop id="frontpagevideo">
-			<source name="frontpagevideo" src="backgroundvideo.mp4" type="video/mp4" alt="backgroundvideohere">
+	<header id="home_jump">
+		<video autoplay muted loop preload="metadata" id="frontpagevideo" poster="https://i.imgur.com/fsCfb5b.jpg">
+			<source src="backgroundvideo.mp4" type="video/mp4">
 		</video>
 		<div class="headertext">
 			<h1>Christian Turner</h1>
@@ -30,19 +30,19 @@
 		</div>
 	</header>
 	<main>
-		<div class="aboutme"><!--aboutme=am-->
+		<div id="aboutme_jump" class="aboutme"><!--aboutme=am-->
 			<div class="am_main amcontainer">
 				<div class="am_main_img am_img">
 					<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="picture of me here">
 				</div>
-				<div class="am_text">
+				<div class="am_text background_color">
 					<h4>About me</h4>
 					<p>About me text here About me text here About me text here About me text here About me text here About me text here About me text here About me text here About me text here </p>
 				</div>
 			</div>
 			<button type="button">View more</button>
 			<div class="am_sub amcontainer">
-				<div class="am_text">
+				<div class="am_text background_color">
 					<h5>skills w.e</h5>
 					<p>About me text here About me text here About me text here About me text here About me text here About me text here About me text here About me text here About me text here </p>
 					<h5>skills w.e</h5>
@@ -56,9 +56,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="portfolio">
+		<div id="portfolio_jump" class="portfolio">
 			<div class="pf_top">
-				<h4>Projects</h4>
+				<h4>Portfolio</h4>
 				<div class="pf_main">
 					<div class="project_container project1">
 						<a class="pf_link icon_hover" href="cttprojectpage.html">
@@ -67,10 +67,22 @@
 						<div class="project_text">
 							<h5>main project 1 name here</h5>
 							<p>Project 1 text here links below this somewhere too</p>
-							<div class="project_links">
-								<a href="cttprojectpage.html">Link here</a>
-								<a href="cttprojectpage.html">Link here</a>
-								<a href="cttprojectpage.html">Link here</a>
+							<div class="project_links project_main_links">
+								<div class="project_icon_size">
+									<a class="icon_hover">
+										<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-512.png" alt="github icon here">
+									</a>
+								</div>
+								<div class="project_icon_size">
+									<a class="icon_hover" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+										<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/youtube_online_social_media_tube-512.png" alt="youtube icon here">
+									</a>
+								</div>
+								<div class="project_icon_size">
+									<a class="icon_hover">
+										<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-512.png" alt="twitter icon here">
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -78,10 +90,22 @@
 						<div class="project_text">
 							<h5>main project 2 name here</h5>
 							<p>Project 2 text here links below this somewhere too</p>
-							<div class="project_links">
-								<a href="cttprojectpage.html">Link here</a>
-								<a href="cttprojectpage.html">Link here</a>
-								<a href="cttprojectpage.html">Link here</a>
+							<div class="project_links project_main_links">
+								<div class="project_icon_size">
+									<a class="icon_hover">
+										<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-512.png" alt="github icon here">
+									</a>
+								</div>
+								<div class="project_icon_size">
+									<a class="icon_hover" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+										<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/youtube_online_social_media_tube-512.png" alt="youtube icon here">
+									</a>
+								</div>
+								<div class="project_icon_size">
+									<a class="icon_hover">
+										<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-512.png" alt="twitter icon here">
+									</a>
+								</div>
 							</div>
 						</div>
 							<a class="pf_link icon_hover" href="cttprojectpage.html">
@@ -112,11 +136,18 @@
 				</a>
 			</div>
 		</div>
-		<div class="contactme">
+		<div id="contactme_jump" class="contactme">
 			<h4>Contact me</h4>
 			<div class="contactmetext">
-				<p>left text here, want to get in touch blah blah</p>
-				<p>Right text here, contact details emails ect ect </p>
+				<div class="contact_div background_color">
+					<p>Want to get in touch?</p>
+					<h6>E-mail: christianturner@hotmail.co.uk</h6>
+				</div>
+				<button>Would you like me to e-mail you?</button>
+				<div class="contact_input background_color">
+					<input placeholder="Enter contact information" type="email">
+					<button class="icon_hover">Send</button>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -139,5 +170,4 @@
 			</div>
 		</div>
 	</footer>
-	
 </body>
