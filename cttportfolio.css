@@ -14,21 +14,19 @@ main > div{
 	margin:0 auto;
 	max-width:1300px;
 }
-main{
-}
 h4, h5, h6,.pp_body h1{
 	font-weight:700;
 	font-size:6.0rem;
 	text-transform:uppercase;
-    -webkit-text-stroke-width: 0.3px;
-    -webkit-text-stroke-color: black;
+	-webkit-text-stroke-width: 0.3px;
+	-webkit-text-stroke-color: black;
 	color: rgb(248,248,255);
 }
 h5{
 	font-weight:600;
 	font-size:4rem;
 }
-.am_text,.aboutme img, button, .navlinks a, .pf_sub_links img, .footer_icon_size > a > img, .contactmetext > div{
+.am_text, button, .navlinks a, .contactmetext > div, img{
 	box-shadow: 0px -2px 5px rgba(2,8,9,0.6)
 }
 button{
@@ -41,12 +39,12 @@ button{
 	font-weight:600;
 	border-radius:10px;
 }
-a.icon_hover img, a.pf_sub_links h6{ /*just hover stuff*/
+a.icon_hover img, a.pf_sub_links h6, .navlinks.icon_hover > a:hover{
 	border:1px solid rgba(248,248,255,0);	
 }
-a.icon_hover:hover img, a.pf_sub_links:hover h6, button:hover{
+a.icon_hover:hover img, a.pf_sub_links:hover h6, button:hover,.navlinks.icon_hover > a:hover{
 	border:1px solid rgba(248,248,255,1);
-	box-shadow: 0px -2px 5px rgba(248,248,255, 0.6)
+	box-shadow: 0px -2px 5px rgba(248,248,255, 0.6);
 }
 .background_color,.project_text > * {
 	background-color:rgb(255,182,193,0.6);
@@ -76,6 +74,7 @@ nav a, nav p{
 	filter: invert(0.95); 
 	position:relative;
 	bottom:4px;
+	box-shadow:none;
 }
 
 .navlogo > p{
