@@ -99,6 +99,9 @@ nav a, nav p{
 	border:1px solid rgba(248,248,255,1);
 
 }
+.nav_dropdown{
+	display:none;
+}
 /*======================================== HEADER SECTION ========================================*/
 header{
 	width:100vw;
@@ -205,7 +208,6 @@ h2{
 .am_text > *{
 	margin:0;
 }
-
 /*======================================== PORTFOLIO SECTION ========================================*/
 .pf_top{
 	display:flex;
@@ -474,15 +476,19 @@ footer{
 	border-radius:50%;
 }
 /*======================================== MEDIA QUERIES SECTION ========================================*/
-@media only screen and (max-width: 1300px) {
-	.main > div{
-		padding:1%;
-	}
-}
-@media only screen and (max-width: 1300px) {
-	.navlinks + a#homelink{
+@media only screen and (max-width: 1100px){
+	.navsublinks{
 		display:none;
 	}
-		
-	
+	.nav_dropdown{
+		color:rgb(248,248,255);
+		display:inline-block;
+		font-size:1rem;
+		transform: scale(1.4,1.4);
+	}
+}
+@media only screen and (max-width: 1300px){
+	main{
+		margin:0 ;
+	}
 }
