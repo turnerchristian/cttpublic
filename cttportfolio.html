@@ -3,106 +3,171 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>HTML Exercise 1</title>
+	<title>Christian Turner: Project</title>
 	<link rel="stylesheet" type="text/css" href="cttportfolio.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet"> 
 </head>
 <body>
 	<nav>
-		<a href="cttportfolio.html">
-			<img src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo3.png" alt="Logo replacement">
+		<a class="navlogo" href="cttportfolio.html">
+			<img src="https://i.imgur.com/G6PitD9.png" alt="Logo here">
+			<p>Placeholder</p>
 		</a> 
-		<div class="navlinks">
-			<a href="cttportfolio.html">Home</a>
-			<a href="google.com">About me</a>
-			<a href="google.com">Portolio</a>
-			<a href="google.com">Contact me</a>
+		<div class="navlinks icon_hover">
+			<a id="home_link" href="#">Home</a>
+			<a href="#aboutme_jump">About me</a>
+			<a href="#portfolio_jump">Portolio</a>
+			<a href="#contactme_jump">Contact me</a>
 		</div>
 	</nav>
+	<header id="home_jump">
+		<video autoplay muted loop preload="metadata" id="frontpagevideo" poster="https://i.imgur.com/fsCfb5b.jpg">
+			<source src="backgroundvideo.mp4" type="video/mp4">
+		</video>
+		<div class="headertext">
+			<h1>Christian Turner</h1>
+			<h2>Full stack loser lmao</h2>	
+		</div>
+	</header>
 	<main>
-		<header>
-			<div class="headertext">
-				<h1>Page Intro Text Here</h1>
-				<h2>Page intro subtext here</h2>	
+		<div id="aboutme_jump" class="aboutme"><!--aboutme=am-->
+			<div class="am_main amcontainer">
+				<div class="am_main_img am_img">
+					<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="picture of me here">
+				</div>
+				<div class="am_text background_color">
+					<h4>About me</h4>
+					<p>About me text here About me text here About me text here About me text here About me text here About me text here About me text here About me text here About me text here </p>
+				</div>
 			</div>
-		</header>
-		<div class="aboutmediv">
-			<div class="aboutmemain">
-				<div class="aboutmemainchild">
-					<div class="aboutmeimg">
-						<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="picture of me here">
-					</div>
-					<div class="aboutmetext">
-						<h4>about me</h4>
-						<p>About me text here About me text here About me text here About me text here About me text here About me text here About me text here About me text here About me text here </p>
+			<button type="button">View more</button>
+			<div class="am_sub amcontainer">
+				<div class="am_text background_color">
+					<h5>skills w.e</h5>
+					<p>About me text here About me text here About me text here About me text here About me text here About me text here About me text here About me text here About me text here </p>
+					<h5>skills w.e</h5>
+					<p>About me text here About me text here About me text here About me text here About me text here About me text here About me text here About me text here About me text here </p>
+				</div>
+				<div class="am_img am_sub_img">
+					<img id="am_sub_ar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="picture of me here">
+						<div class="am_sub_content">
+							<img class="sub_img" src="https://designshack.net/wp-content/uploads/placeholder-image.png" alt="picture of me here">
 					</div>
 				</div>
-				<button type="button">button to expand subpage</button>
-			</div>
-			<div class="aboutmesub">
-				<h5>skills or w.e</h5>
-				<p>Enter text here wow Enter text here wow Enter text here wow Enter text here wow Enter text here wow </p>
-				<h5>Maybe more stuff here</h5>
-				<p>Enter text here wow Enter text here wow Enter text here wow Enter text here wow Enter text here wow </p>
 			</div>
 		</div>
-		<div class="portfolio">
-			<div class="topportfolio">
-				<h4>Projects</h4>
-				<div class="mainportfolio">
-					<a class="portfoliolinks" href="cttprojectpage.html">
-						<div class="mainprojectlink">
-							<img src="https://via.placeholder.com/640x360" alt="project picture here">
-							<div class="projecttext">
-								<h5>main project 1 name here links below this somewhere too</h5>
-								<p>Project 1 text here</p>
+		<div id="portfolio_jump" class="portfolio">
+			<div class="pf_top">
+				<h4>Portfolio</h4>
+				<div class="pf_main">
+					<div class="project_container project1">
+						<a class="pf_link icon_hover" href="cttprojectpage.html">
+							<img class="project_img" src="https://via.placeholder.com/640x360" alt="project picture here">
+						</a>
+						<div class="project_text">
+							<h5>main project 1 name here</h5>
+							<p>Project 1 text here links below this somewhere too</p>
+							<div class="project_links project_main_links">
+								<div class="project_icon_size">
+									<a class="icon_hover">
+										<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-512.png" alt="github icon here">
+									</a>
+								</div>
+								<div class="project_icon_size">
+									<a class="icon_hover" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+										<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/youtube_online_social_media_tube-512.png" alt="youtube icon here">
+									</a>
+								</div>
+								<div class="project_icon_size">
+									<a class="icon_hover">
+										<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-512.png" alt="twitter icon here">
+									</a>
+								</div>
 							</div>
 						</div>
-					</a>
-					<a class="portfoliolinks" href="cttprojectpage.html">
-						<div class="mainprojectlink">
-							<div class="projecttext">
-								<h5>main project 2 name here</h5>
-								<p>Project 2 text here links below this somewhere too</p>
+					</div>
+					<div class="project_container project2">
+						<div class="project_text">
+							<h5>main project 2 name here</h5>
+							<p>Project 2 text here links below this somewhere too</p>
+							<div class="project_links project_main_links">
+								<div class="project_icon_size">
+									<a class="icon_hover">
+										<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-512.png" alt="github icon here">
+									</a>
+								</div>
+								<div class="project_icon_size">
+									<a class="icon_hover" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+										<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/youtube_online_social_media_tube-512.png" alt="youtube icon here">
+									</a>
+								</div>
+								<div class="project_icon_size">
+									<a class="icon_hover">
+										<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-512.png" alt="twitter icon here">
+									</a>
+								</div>
 							</div>
-							<img src="https://via.placeholder.com/640x360" alt="project picture here">
 						</div>
-					</a>
+							<a class="pf_link icon_hover" href="cttprojectpage.html">
+						<img class="project_img" src="https://via.placeholder.com/640x360" alt="project picture here">
+						</a>
+					</div>
 				</div>
-				<button type="button">button to expand subpage</button>
+				<button type="button">VIEW MORE</button>
 			</div>
-			<div class="subportfolio">
-				<a class="portfoliolinks" href="cttprojectpage.html">
-					<div class="subprojectlink">
+			<div class="pf_sub">
+				<a class="pf_sub_links icon_hover" href="cttprojectpage.html">
+					<div class="pf_sub_link_div">
 						<h6>sub project name 1</h6>
 						<img src="https://www.webfx.com/blog/images/cdn.designinstruct.com/files/582-how-to-image-placeholders/generic-image-placeholder.png" alt="sub project pic here">
 					</div>
 				</a>
-				<a class="portfoliolinks" href="cttprojectpage.html">
-					<div class="subprojectlink">
+				<a class="pf_sub_links icon_hover" href="cttprojectpage.html">
+					<div class="pf_sub_link_div">
 						<h6>sub project name 2</h6>
 						<img src="https://www.webfx.com/blog/images/cdn.designinstruct.com/files/582-how-to-image-placeholders/generic-image-placeholder.png" alt="sub project pic here">
 					</div>
 				</a>
-				<a class="portfoliolinks" href="cttprojectpage.html">
-					<div class="subprojectlink">
+				<a class="pf_sub_links icon_hover" href="cttprojectpage.html">
+					<div class="pf_sub_link_div">
 						<h6>sub project name 3</h6>
 						<img src="https://www.webfx.com/blog/images/cdn.designinstruct.com/files/582-how-to-image-placeholders/generic-image-placeholder.png" alt="sub project pic here">
 					</div>
 				</a>
 			</div>
 		</div>
-		<div class="contactme">
+		<div id="contactme_jump" class="contactme">
 			<h4>Contact me</h4>
 			<div class="contactmetext">
-				<p>left text here, want to get in touch blah blah</p>
-				<p>Right text here, contact details emails ect ect </p>
+				<div class="contact_div background_color">
+					<p>Want to get in touch?</p>
+					<h6>E-mail: christianturner@hotmail.co.uk</h6>
+				</div>
+				<button>Would you like me to e-mail you?</button>
+				<div class="contact_input background_color">
+					<input placeholder="Enter contact information" type="email">
+					<button class="icon_hover">Send</button>
+				</div>
 			</div>
 		</div>
 	</main>
 	<footer>
-		<a>links to git/twitter/ect...</a>
-		<a>links to git/twitter/ect...</a>
-		<a>links to git/twitter/ect...</a>
+		<div class="footer_links">
+			<div class="footer_icon_size">
+				<a class="icon_hover">
+					<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/64/social_media_logo_github-512.png" alt="github icon here">
+				</a>
+			</div>
+			<div class="footer_icon_size">
+				<a class="icon_hover" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+					<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/youtube_online_social_media_tube-512.png" alt="youtube icon here">
+				</a>
+			</div>
+			<div class="footer_icon_size">
+				<a class="icon_hover" href="https://www.youtube.com/watch?v=Qja-nx006vc"><!-- OwO what's this?-->
+					<img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-512.png" alt="twitter icon here">
+				</a>
+			</div>
+		</div>
 	</footer>
-	
 </body>
