@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	border-radius:7px;
 }
 html{
 	font-size:62.5%;
@@ -13,6 +14,9 @@ body{
 main > div{
 	margin:0 auto;
 	max-width:1300px;
+}
+main {
+	margin-top:200px;
 }
 h4, h5, h6,.pp_body h1{
 	font-weight:700;
@@ -37,7 +41,7 @@ button{
 	text-transform:uppercase;
 	border:1px solid rgb(248,248,255);
 	font-weight:600;
-	border-radius:10px;
+	border-radius:5px;
 }
 a.icon_hover img, a.pf_sub_links h6, .navlinks.icon_hover > a:hover{
 	border:1px solid rgba(248,248,255,0);	
@@ -49,7 +53,7 @@ a.icon_hover:hover img, a.pf_sub_links:hover h6, button:hover,.navlinks.icon_hov
 .background_color,.project_text > * {
 	background-color:rgba(255,182,193,0.7);
 	box-shadow: 0px -2px 5px rgba(2,8,9,0.6);
-	border-radius:20px;
+	border-radius:5px;
 }
 h1, h2, nav{
     animation-fill-mode: forwards !important;
@@ -170,7 +174,7 @@ header{
 	position:relative;
 	z-index:-1;
 }
-#frontpagevideo{
+#frontpagevideo, #frontpagevideo[poster]{
 	object-fit:cover;
 	max-width:100%;
 	position:fixed;
@@ -205,7 +209,7 @@ h2{
 }
 .aboutme > * {
 	margin-bottom:50px;
-	border-radius:10px;
+	border-radius:5px;
 }
 .aboutme > button{
 	margin:0 auto;
@@ -216,7 +220,7 @@ h2{
 	display:flex;
 }
 .am_main > *{
-	padding:50px;
+	padding:25px;
 }
 .am_img{
 	width:30%;
@@ -224,7 +228,7 @@ h2{
 .am_img > img{
 	max-width:100%;
 	max-height:100%;
-	border-radius:50%;
+	border-radius:7px;
 }
 /*======================================== SKILLS SECTION ========================================*/
 .am_sub{
@@ -242,16 +246,16 @@ h2{
 	left:0;
 	right:0;
 	bottom:0;
-	padding:50px;
+	padding:25px;
 }
 .sub_img{
 	max-width:100%;
 	height:100%;
 	object-fit:cover;
-	border-radius:50%;
+	border-radius:7px;
 }
 .am_sub .am_text{
-	padding:50px;
+	padding:25px;
 }
 .am_text{
 	background-color:rgba(255,182,193,0.6);
@@ -260,7 +264,7 @@ h2{
 	flex-direction:column;
 	justify-content:center;
 	margin:auto 0;
-	padding-top:40px;
+	padding-top:10px
 }
 .am_text > p{
 	font-size:2.0rem;
@@ -311,7 +315,7 @@ h2{
 	display:flex;
 	flex-direction:column;
 	justify-content:space-between;
-	border-radius:10px;
+	border-radius:5px;
 }
 .project_text > *{
 	padding:20px;
@@ -325,6 +329,12 @@ h2{
 }
 .project2 .project_text{
 	margin-right:50px;
+}
+.project2 h5 {
+	align-self:flex-end;
+}
+.project2 .project_links {
+	align-self:flex-start;
 }
 .project_main_links{
 	width:70%;
@@ -410,7 +420,7 @@ h2{
 	width:100%;
 	font-size:2rem;
 	padding-left:10px;
-	border-radius:10px;
+	border-radius:5px;
 }
 .contact_input button{
 	box-shadow: none;
@@ -549,6 +559,7 @@ footer{
 	main{
 		margin:0 auto;
 		width:80%;
+		margin-top:100px;
 	}
 	main > div{
 		max-width:750px;
@@ -569,7 +580,7 @@ footer{
 		align-items:center;
 	}
 	.project1 .project_text, .project2 .project_text{
-		margin:100px 0
+		margin:20px 0
 	}
 	.project_text > *, .project_text h5{
 		align-self:auto;
@@ -668,6 +679,9 @@ footer{
 	.am_main_img{
 		order:1;
 	}
+	.contactmetext > div{
+		padding:2%!important;
+	}
 	.contact_div > h6{
 		text-align:right;
 	}
@@ -679,6 +693,8 @@ footer{
 	.contact_input input{
 		margin:0;
 		margin-bottom:20px;
+		text-align:center;
+		padding:0 5px;
 	}
 	.footer_links{
 		width:auto;
@@ -701,6 +717,9 @@ footer{
 	.pp_info_content > *{
 		width:100%;
 	}
+	.pp_interact h4{
+		text-align:left;
+	}
 }
 @media only screen and (max-aspect-ratio: 16/9){
 	#frontpagevideo{
@@ -708,28 +727,7 @@ footer{
 		height:100vh;
 	}
 }
-@media only screen and (max-width: 750px){
-	.pp_interact h4{
-		text-align:left;
-	}
-}
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
