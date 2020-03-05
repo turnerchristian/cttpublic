@@ -176,7 +176,6 @@ nav p {
 .navlogo>img {
 	padding-right: 15px;
 	height: 100%;
-	filter: invert(0.95);
 	position: relative;
 	bottom: 4px;
 	box-shadow: none;
@@ -524,7 +523,7 @@ h2 {
 	margin-right: 50px;
 	width: 100%;
 	font-size: 2rem;
-	padding-left: 10px;
+	padding: 0 10px;
 	border-radius: 5px;
 }
 
@@ -918,4 +917,66 @@ footer {
 	}
 	
 }
+/*======================================== IE 11 SUCKS SECTION ========================================*/
+/* BUGS: Object-fit doesn't work for IE 11 (so all images with it look weird), I am not gonna bother fixing it for now as I think the easiest way would be with JS (according to a quick google search) or something idk*/
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+	 
+	header{
+		background-image: url("https://i.imgur.com/fsCfb5b.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	.aboutme{
+		align-items: center;
+	}
+	
+	.amcontainer{
+		max-width: 100%;
+	}
+	
+	.pf_main{
+		max-width: 100%;
+	}
+	
+	.project_container{
+		overflow: hidden;
+	}
+	
+	
+	.contact_input{
+		justify-content: space-around;
+	}
+	
+	.contact_input>input{
+		width: auto;
+	}
+	
+	footer{
+		justify-content: flex-start;
+	}
+	
+	.project_main_links{
+		overflow: hidden;
+	}
+	
+	.pp_info_content{
+		max-width: 100%;
+		overflow: hidden;
+	}
+	
+	.pp_text>p{
+		max-width: 100%;
+	}
+	
+	.pp_links>a{
+		height: auto;
+	}
+	
+	.project_icon_size{
+		overflow: hidden;
+	}
+	
+}
+
 
