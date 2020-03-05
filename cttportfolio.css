@@ -1,5 +1,3 @@
-
-
 * {
 	box-sizing: border-box;
 }
@@ -7,7 +5,7 @@
 html {
 	font-size: 62.5%;
 	font-family: 'Montserrat', sans-serif;
-	color: rgba(4, 8, 9, 1);
+	color: rgb(4, 8, 9);
 	border-radius: 7px;
 }
 
@@ -64,7 +62,7 @@ button {
 a.icon_hover img,
 a.pf_sub_links h6,
 .navlinks.icon_hover>a:hover {
-	border: 1px solid rgba(248, 248, 255, 0);
+	border: none;
 }
 
 a.icon_hover:hover img,
@@ -88,7 +86,8 @@ h1 {
 	visibility: hidden;
 }
 
-h2 {
+h2,
+.pp_info>div {
 	animation: 10s fadeIn2;
 	animation-fill-mode: forwards;
 	visibility: hidden;
@@ -257,7 +256,6 @@ h2 {
 
 .aboutme {
 	height: 1200px;
-	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -273,7 +271,6 @@ h2 {
 }
 
 .amcontainer {
-	width: 100%;
 	height: 500px;
 	display: flex;
 }
@@ -334,7 +331,7 @@ h2 {
 	flex-direction: column;
 	justify-content: center;
 	margin: auto 0;
-	padding-top: 10px
+	padding-top: 10px;
 }
 
 .am_text>p {
@@ -342,7 +339,7 @@ h2 {
 }
 
 .am_text>* {
-	margin: 0;
+	margin: 0;x
 }
 
 
@@ -679,9 +676,11 @@ footer {
 /*======================================== MEDIA QUERIES SECTION ========================================*/
 
 @media only screen and (max-width: 1100px) {
+	
 	.navsublinks {
 		display: none;
 	}
+	
 	.navlinks .nav_dropdown {
 		color: rgb(248, 248, 255);
 		display: inline-block;
@@ -694,181 +693,229 @@ footer {
 }
 
 @media only screen and (max-width: 1300px) {
+	
 	main {
 		margin: 0 auto;
 		width: 80%;
 		margin-top: 100px;
 	}
+	
 	main>div {
 		max-width: 750px;
 	}
+	
 	h4 {
 		text-align: left;
 		align-self: flex-start;
 	}
+	
 	.project_container {
 		flex-direction: column;
 		height: auto;
 		align-items: center;
 	}
+	
 	.project_text {
 		max-width: 100%;
 		width: auto;
 		justify-content: space-between;
 		align-items: center;
 	}
+	
 	.project1 .project_text,
 	.project2 .project_text {
 		margin: 20px 0;
 	}
+	
 	.project_text>*,
 	.project_text h5 {
 		align-self: auto;
 	}
+	
 	.pf_link {
 		width: 100%;
 		max-height: 100%;
 		order: 1;
 	}
+	
 	.project_img {
 		margin: 0 auto;
 	}
+	
 	.pf_main {
 		height: auto;
 	}
+	
 	.pf_sub {
 		height: auto;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 	}
+	
 	.pf_sub>a {
 		width: 50%;
 	}
+	
 	.contact_div {
 		flex-direction: column;
 		align-items: center;
 	}
+	
 	.contact_input {
 		width: 100%;
 	}
+	
 	.amcontainer {
 		height: auto;
 		max-width: 750px;
 		width: 100%;
 	}
+	
 	footer {
 		padding: 0 15%;
 	}
+	
 	.pp_main {
 		max-width: 80%;
 	}
+	
 	.pp_info_content {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
+	
 	.pp_text {
 		margin-left: 8%;
 	}
+	
 	.pp_info_content>* {
 		width: 46%;
 		height: auto;
 	}
+	
 	.pp_links {
 		flex-direction: row;
 		margin-top: 20px;
 	}
+	
 	.project_main_links {
 		width: 100%;
 	}
+	
 }
 
 @media only screen and (max-width: 850px) {
+	
 	.contact_div>h6 {
 		margin-top: 10px;
 		box-shadow: none;
 	}
+	
 	.contact_div>* {
 		max-width: 95%;
 	}
+	
 	.project_main_links .project_icon_size {
 		width: 15%;
 	}
+	
 }
 
 @media only screen and (max-width: 750px) {
+	
 	.headertext {
 		padding-left: 10%;
 	}
+	
 	.navlogo {
 		display: none;
 	}
+	
 	.navlinks {
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 	}
+	
 	.amcontainer {
 		flex-direction: column;
 	}
+	
 	.amcontainer>* {
 		width: 100%;
 	}
+	
 	.aboutme {
 		height: auto;
 	}
+	
 	.am_main_img {
 		order: 1;
 	}
+	
 	.contactmetext>div {
 		padding: 2%;
 	}
+	
 	.contact_div>h6 {
 		text-align: right;
-		font-size: 2vh;
+		font-size: 1.5vh;
 	}
+	
 	.contact_input {
 		width: 100%;
 		flex-direction: column;
 		align-items: center;
 	}
+	
 	.contact_input input {
 		margin: 0;
 		margin-bottom: 20px;
 		text-align: center;
 		padding: 0 5px;
 	}
+	
 	.footer_links {
 		width: auto;
 		height: auto;
 	}
+	
 	.footer_icon_size {
 		width: 20%;
 	}
+	
 	h4 {
 		font-size: 10vw;
 	}
+	
 	.pp_info_content {
 		flex-direction: column;
 		align-items: center;
 	}
+	
 	.pp_text {
 		margin-left: 0;
 		margin-top: 20px;
 	}
+	
 	.pp_info_content>* {
 		width: 100%;
 	}
+	
 	.pp_interact h4 {
 		text-align: left;
 	}
+	
 }
 
 @media only screen and (max-aspect-ratio: 16/9) {
+	
 	#frontpagevideo,
 	#frontpagevideo[poster] {
 		max-width: auto;
 		height: 100vh;
 	}
+	
 }
 
