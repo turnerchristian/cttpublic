@@ -1,3 +1,2 @@
-# cttpublic
-my public repo to send people stuff
+# old portfolio
 lmao @ the css file size
