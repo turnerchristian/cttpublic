@@ -13,7 +13,7 @@ body {
 	background-color: rgb(2, 8, 9);
 }
 
-main>div {
+.pagewidth {
 	margin: 0 auto;
 	max-width: 1300px;
 }
@@ -25,7 +25,7 @@ main {
 h4,
 h5,
 h6,
-.pp_body h1 {
+.projectpage_body h1 {
 	font-weight: 700;
 	font-size: 6.0rem;
 	text-transform: uppercase;
@@ -39,32 +39,23 @@ h5 {
 	font-size: 4rem;
 }
 
-.am_text,
-.navlinks a,
-.contactmetext>div,
 img {
 	box-shadow: 0px -2px 5px rgba(2, 8, 9, 0.6);
 	border-radius: 7px;
 }
 
-a.icon_hover img,
-a.pf_sub_links h6,
-.navlinks.icon_hover>a:hover {
-	border: none;
-}
-
-a.icon_hover:hover img,
-a.pf_sub_links:hover h6,
-.navlinks.icon_hover>a:hover {
-	border: 1px solid rgba(248, 248, 255, 1);
+.icon_hover:hover button,
+.icon_hover:hover a,
+.icon_hover:hover h6,
+.icon_hover:hover img {
+	border: 1px solid rgb(248, 248, 255);
 	box-shadow: 0px -2px 5px rgba(248, 248, 255, 0.6);
 }
 
-.background_color,
-.project_text>* {
+.background_color {
 	background-color: rgba(255, 182, 193, 0.7);
 	box-shadow: 0px -2px 5px rgba(2, 8, 9, 0.6);
-	border-radius: 5px;
+	border-radius: 7px;
 }
 
 h1 {
@@ -74,7 +65,7 @@ h1 {
 }
 
 h2,
-.pp_info>div {
+.projectpage_main_content>div {
 	animation: 10s fadeIn2;
 	animation-fill-mode: forwards;
 	visibility: hidden;
@@ -131,6 +122,7 @@ nav {
 	}
 }
 
+
 /*======================================== NAV SECTION ========================================*/
 
 nav {
@@ -149,7 +141,6 @@ nav a,
 nav p {
 	text-decoration: none;
 	color: rgb(248, 248, 255);
-	text-transform: uppercase;
 }
 
 .navlogo>img {
@@ -163,6 +154,7 @@ nav p {
 .navlogo>p {
 	font-size: 2.5rem;
 	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .navlogo {
@@ -220,7 +212,7 @@ header {
 
 h1 {
 	font-size: 2.5rem;
-	color: white;
+	color: rgb(248, 248, 255);
 }
 
 h2 {
@@ -232,193 +224,124 @@ h2 {
 
 /*======================================== ABOUT ME SECTION ========================================*/
 
-.aboutme {
-	height: 1200px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.aboutme>* {
+.aboutme_container {
 	margin-bottom: 50px;
-	border-radius: 5px;
-}
-
-.amcontainer {
-	height: 500px;
 	display: flex;
 }
 
-.am_img {
-	padding: 25px;
-}
-
-.am_img>img,
-.sub_img_div{
+.aboutme_img img {
+	max-height: 500px;
 	max-width: 100%;
-	max-height: 100%;
-	border-radius: 7px;
 }
 
-.am_main_img{
-	display: flex;
-	justify-content: center;
+.aboutme_img {
+	margin: 25px;
 }
 
 
 /*======================================== SKILLS SECTION ========================================*/
 
-.am_sub {
+.aboutme_sub {
 	margin-top: 50px;
-	align-items:center;
+	align-items: center;
 }
 
-.sub_img_div{
-	height: 100%;
-}
-
-.sub_img {
-	border-radius: 7px;
-	max-width: 100%;
-}
-
-.am_text {
+.aboutme_text {
 	background-color: rgba(255, 182, 193, 0.6);
-	width: 70%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	margin: auto 0;
-	padding: 25px
-}
-
-.am_text>p {
+	padding: 25px;
 	font-size: 2.0rem;
 }
 
-.am_text>* {
+.aboutme_text>h5 {
 	margin: 0;
 }
 
 
 /*======================================== PORTFOLIO SECTION ========================================*/
 
-.pf_top {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.pf_main {
-	display: flex;
-	flex-direction: column;
-	height: 1000px;
-}
-
-.project_container {
+.portfolio_main_project_container {
 	width: 100%;
 	height: 50%;
 	display: flex;
-	justify-content: space-between;
+	align-items: center;
 }
 
-.project2 {
-	align-items: flex-end;
+.portfolio_main_project2 {
 	margin-top: 100px;
 }
 
-.project_container>* {
-	height: 100%;
-}
-
-.project_img {
+.portfolio_main_img {
 	height: 100%;
 	max-width: 100%;
 	object-fit: cover;
 }
 
-.pf_link {
-	width: 30%;
-	object-fit: cover;
-}
-
-.project_text {
+.portfolio_text_div {
 	text-decoration: none;
 	color: rgb(2, 7, 9);
 	font-size: 2rem;
-	width: 70%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	border-radius: 5px;
 }
 
-.project_text>* {
+.portfolio_text_div>h5,
+.portfolio_text_div>p {
+	margin: 0;
 	padding: 20px;
 }
 
-.project_text h5 {
-	margin: 0;
-	align-self: flex-start;
+.portfolio_text_div>p {
+	padding-top: 0;
 }
 
-.project1 .project_text {
+.portfolio_main_project1>.portfolio_text_div {
 	margin-left: 50px;
 }
 
-.project2 .project_text {
+.portfolio_main_project2>.portfolio_text_div {
 	margin-right: 50px;
 }
 
-.project2 h5 {
-	align-self: flex-end;
-}
-
-.project2 .project_links {
-	align-self: flex-start;
-}
-
-.project_main_links {
-	width: 70%;
-	align-self: flex-end;
+.portfolio_links {
 	display: flex;
-	justify-content: space-between;
-	padding-bottom: 2%;
+	justify-content: space-around;
+	padding-bottom: 10px;
 }
 
-.project_main_links .project_icon_size {
+.portfolio_links .portfolio_icon_size {
 	width: 8%;
 }
 
 
 /*======================================== SUB PORTFOLIO SECTION ========================================*/
 
-.pf_sub {
+.portfolio_sub {
 	display: flex;
 	justify-content: space-between;
 	height: 500px;
 }
 
-.pf_sub>a {
+.portfolio_sub>a {
 	width: 30%;
-	height: 100%;
 	text-decoration: none;
 }
 
-.pf_sub_link_div {
+.portfolio_sub_link_div {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.pf_sub_link_div>img {
+.portfolio_sub_link_div>img {
 	object-fit: cover;
 	height: 100%;
 	max-width: 100%;
 }
 
-.pf_sub h6 {
+.portfolio_sub h6 {
 	text-decoration: none;
 	font-weight: 600;
 	font-size: 2.0rem;
@@ -435,7 +358,11 @@ h2 {
 	margin-top: 100px;
 }
 
-.contactmetext {
+.contactme>h4 {
+	align-self: flex-start;
+}
+
+.contact_main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -443,28 +370,29 @@ h2 {
 	width: 100%;
 }
 
-.contactmetext>div {
-	margin: 50px 0px;
-	padding: 50px 50px;
+.contact_main>div {
+	margin: 50px 0;
+	padding: 50px;
 }
 
-.contact_div {
+.contact_main_text {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 80%;
+	min-width: 80%;
 }
 
-.contact_div>* {
+.contact_main_text h6,
+.contact_main_text p {
 	margin: 0;
 }
 
-.contact_div h6 {
+.contact_main_text h6 {
 	font-size: 2rem;
 }
 
 .contact_input {
-	width: 50%;
+	min-width: 50%;
 }
 
 .contact_input {
@@ -477,30 +405,21 @@ h2 {
 	width: 100%;
 	font-size: 2rem;
 	padding: 0 10px;
-	border-radius: 5px;
+	border-radius: 7px;
 }
 
 .contact_input button {
-	color: white;
+	color: rgb(248, 248, 255);
 	background: none;
 	padding: 10px;
 	font-size: 2rem;
 	text-transform: uppercase;
 	border: 1px solid rgb(248, 248, 255);
 	font-weight: 600;
-	border-radius: 5px;
+	border-radius: 7px;
 }
 
-.contact_input button:hover {
-	border: 1px solid rgba(248, 248, 255, 0.6);
-	box-shadow: 0px -2px 5px rgba(248, 248, 255, 0.6)
-}
-
-.contact_div>h6 {
-	font-size: 2.0rem;
-}
-
-.contact_div>p {
+.contact_main_text>p {
 	font-size: 2.5rem;
 }
 
@@ -509,29 +428,17 @@ h2 {
 
 footer {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	padding: 0 30%;
 	height: 300px;
 }
 
-.footer_links {
-	max-width: 100%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 30%;
-	width: 60%;
-}
-
 .footer_icon_size {
-	width: 33%;
-	height: 100%;
+	width: 15%;
 }
 
 .footer_icon_size>a>img {
-	display: block;
 	max-width: 100%;
 	max-height: 100%;
 	border-radius: 50%;
@@ -540,19 +447,14 @@ footer {
 
 /*======================================== PROJECT PAGE SECTION ========================================*/
 
-.pp_body h1,
-.pp_body h4 {
+.projectpage_body h1,
+.projectpage_body h4 {
 	font-size: 4.0rem;
 }
 
-.pp_offset {
+.projectpage_offset {
 	position: relative;
 	top: 150px;
-}
-
-.pp_main {
-	margin: 0 auto;
-	max-width: 1300px;
 }
 
 #background_img {
@@ -561,70 +463,73 @@ footer {
 	width: 100vw;
 	background-size: cover;
 	position: fixed;
-	z-index: -1;
+	top: 0;
 }
 
-.pp_info {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.projectpage_main_content {
 	margin: 0 auto;
 }
 
-.pp_info_content {
+.projectpage_main_div {
 	display: flex;
+}
+
+.projectpage_main_img img {
+	object-fit: cover;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.projectpage_text {
+	max-width: 55%;
+	margin-left: 30px;
+	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
-.pp_info_content>* {
-	width: 36%;
-}
-
-.pp_info_content>img {
-	object-fit: cover;
-}
-
-.pp_text {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.pp_text>p {
+.projectpage_text>p {
 	font-size: 2.0rem;
 	padding: 15px;
 	padding-left: 20px;
-	display: block;
 	margin: 0;
 }
 
-.pp_links {
+.projectpage_links {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
 	justify-content: space-around;
-	width: 18%;
+	padding: 15px;
 }
 
-.pp_interact {
+.projectpage_icon_size img {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 50%;
+}
+
+.projectpage_icon_size {
+	width: 75px;
+}
+
+.projectpage_interact {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	max-width: 100%;
 }
 
-.pp_interact>img {
+.projectpage_interact>img {
 	max-width: 100%;
 }
 
 
 /*======================================== PROJECT LINKS SECTION ========================================*/
 
-.project_icon_size {
+.portfolio_icon_size {
 	width: 20%;
 }
 
-.project_icon_size>a>img {
+.portfolio_icon_size>a>img {
 	display: block;
 	max-width: 100%;
 	max-height: 100%;
@@ -659,106 +564,58 @@ footer {
 		margin-top: 100px;
 	}
 	
-	main>div {
-		max-width: 750px;
-	}
-	
-	h4 {
-		text-align: left;
-		align-self: flex-start;
-	}
-	
-	.project_container {
+	.portfolio_main_project_container {
 		flex-direction: column;
-		height: auto;
 		align-items: center;
 	}
 	
-	.project_text {
-		max-width: 100%;
-		width: auto;
-		justify-content: space-between;
-		align-items: center;
-	}
-	
-	.project1 .project_text,
-	.project2 .project_text {
+	.portfolio_main_project1>.portfolio_text_div,
+	.portfolio_main_project2>.portfolio_text_div {
 		margin: 20px 0;
 	}
 	
-	.project_text>*,
-	.project_text h5 {
-		align-self: auto;
-	}
-	
-	.pf_link {
-		width: 100%;
-		max-height: 100%;
+	.portfolio_link {
 		order: 1;
 	}
 	
-	.project_img {
-		margin: 0 auto;
-	}
-	
-	.pf_main {
-		height: auto;
-	}
-	
-	.pf_sub {
+	.portfolio_sub {
 		height: auto;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
 	}
 	
-	.pf_sub>a {
+	.portfolio_sub>a {
 		width: 50%;
 	}
 	
-	.contact_div {
+	.contact_main_text {
 		flex-direction: column;
 		align-items: center;
 	}
 	
 	.contact_input {
-		width: 100%;
-	}
-	
-	.amcontainer {
-		height: auto;
-		max-width: 750px;
-		width: 100%;
+		width: 90%;
 	}
 	
 	footer {
 		padding: 0 15%;
 	}
 	
-	.pp_main {
+	.projectpage_main {
 		max-width: 80%;
 	}
 	
-	.pp_info_content {
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-	
-	.pp_text {
+	.projectpage_text {
 		margin-left: 8%;
 	}
 	
-	.pp_info_content>* {
-		width: 46%;
-		height: auto;
-	}
-	
-	.pp_links {
+	.projectpage_links {
 		flex-direction: row;
 		margin-top: 20px;
 	}
 	
-	.project_main_links {
+	.portfolio_links {
 		width: 100%;
 	}
 	
@@ -766,16 +623,12 @@ footer {
 
 @media only screen and (max-width: 850px) {
 	
-	.contact_div>h6 {
+	.contact_main_text>h6 {
 		margin-top: 10px;
 		box-shadow: none;
 	}
 	
-	.contact_div>* {
-		max-width: 95%;
-	}
-	
-	.project_main_links .project_icon_size {
+	.portfolio_links .portfolio_icon_size {
 		width: 15%;
 	}
 	
@@ -797,33 +650,46 @@ footer {
 		justify-content: space-between;
 	}
 	
-	.amcontainer {
+	.aboutme_container {
 		flex-direction: column;
+		align-items: center;
 	}
 	
-	.amcontainer>* {
-		width: 100%;
+	p {
+		font-size: 1.6rem;
 	}
 	
-	.aboutme {
-		height: auto;
+	img {
+		max-height: 350px;
 	}
 	
-	.am_main_img {
+	h5 {
+		font-size: 7vw;
+	}
+	
+	.aboutme_main_img {
 		order: 1;
 	}
 	
-	.contactmetext>div {
+	.portfolio_main_project1>.portfolio_text_div,
+	.portfolio_main_project2>.portfolio_text_div {
+		margin: 20px 0;
+	}
+	
+	.portfolio_sub_link_div {
+		margin: 10px;
+	}
+	
+	.contact_main>div {
 		padding: 2%;
 	}
 	
-	.contact_div>h6 {
+	.contact_main_text>h6 {
 		text-align: right;
 		font-size: 1.5vh;
 	}
 	
 	.contact_input {
-		width: 100%;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -835,107 +701,89 @@ footer {
 		padding: 0 5px;
 	}
 	
-	.footer_links {
-		width: auto;
-		height: auto;
-	}
-	
-	.footer_icon_size {
-		width: 20%;
-	}
-	
 	h4 {
 		font-size: 10vw;
 	}
 	
-	.pp_info_content {
+	.projectpage_main_div {
 		flex-direction: column;
 		align-items: center;
 	}
 	
-	.pp_text {
+	.projectpage_text {
 		margin-left: 0;
 		margin-top: 20px;
 	}
 	
-	.pp_info_content>* {
-		width: 100%;
-	}
-	
-	.pp_interact h4 {
+	.projectpage_interact h4 {
 		text-align: left;
 	}
 	
 }
 
 @media only screen and (max-aspect-ratio: 16/9) {
-	
 	#frontpagevideo,
 	#frontpagevideo[poster] {
-		max-width: auto;
 		height: 100vh;
 	}
 	
 }
+
 /*======================================== IE 11 SUCKS SECTION ========================================*/
-/* BUGS: Object-fit doesn't work for IE 11 (so all images with it look weird), I am not gonna bother fixing it for now as I think the easiest way would be with JS (according to a quick google search) or something idk*/
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-	 
-	header{
+
+@media screen and (-ms-high-contrast: active),screen and (-ms-high-contrast: none) {
+	header {
 		background-image: url("https://i.imgur.com/fsCfb5b.jpg");
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
 	
-	.aboutme{
+	.aboutme {
 		align-items: center;
 	}
 	
-	.amcontainer{
+	.aboutme_container {
 		max-width: 100%;
 	}
 	
-	.pf_main{
+	.portfolio_main {
 		max-width: 100%;
 	}
 	
-	.project_container{
+	.portfolio_main_project_container {
 		overflow: hidden;
 	}
 	
-	
-	.contact_input{
+	.contact_input {
 		justify-content: space-around;
 	}
 	
-	.contact_input>input{
+	.contact_input>input {
 		width: auto;
 	}
 	
-	footer{
+	footer {
 		justify-content: flex-start;
 	}
 	
-	.project_main_links{
+	.portfolio_links {
 		overflow: hidden;
 	}
 	
-	.pp_info_content{
+	.projectpage_main_div {
 		max-width: 100%;
 		overflow: hidden;
 	}
 	
-	.pp_text>p{
+	.projectpage_text>p {
 		max-width: 100%;
 	}
 	
-	.pp_links>a{
+	.projectpage_links>a {
 		height: auto;
 	}
 	
-	.project_icon_size{
+	.portfolio_icon_size {
 		overflow: hidden;
 	}
-	
 }
-
